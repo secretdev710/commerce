@@ -67,7 +67,7 @@ export async function updateItemQuantity(
     const cart = await getCart(cartId);
 
     if (!cart) {
-      return 'Error fetching cart';
+      return 'Error  fetching cart';
     }
 
     const lineItem = cart.lines.find((line) => line.merchandise.id === merchandiseId);
